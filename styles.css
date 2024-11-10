@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a9229;
+  padding: 20px;
+  color: rgb(168, 36, 36);
+}
+
+header .logo img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(1, 9, 10);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Golden color on hover */
+}
+
+/* Section Styles */
+section {
+  padding: 50px 20px;
+  margin-bottom: 30px;
+}
+
+section h2 {
+  text-align: center;
+  color: #5b8c5a;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #053257e5;
+  color: #333;
+}
+
+.left-side {
+  width: 45%;
+}
+
+.left-side h2 {
+  font-size: 2.5em;
+  color: #e21833;
+}
+
+.left-side p {
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+.right-side {
+  width: 45%;
+  text-align: center;
+}
+
+.right-side img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  border: 5px solid #51d14f;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section */
+.services {
+  background-color: #fff;
+  text-align: center;
+}
+
+.service-card {
+  display: inline-block;
+  width: 45%;
+  margin: 20px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #5b8c5a;
+}
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f0f8ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #5b8c5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff5733;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1em;
+  color: #ddd;
+}
+/* Social Media Icons Styling */
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 15px;
+  font-size: 2em;  /* Increase icon size */
+  color: #3006eb;  /* Default color */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff5733; /* Color change on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left-side, .right-side {
+      width: 100%;
+      text-align: center;
+  }
+
+  .left-side h2 {
+      font-size: 2em;
+  }
+
+  .left-side p {
+      font-size: 1.1em;
+  }
+
+  .service-card {
+      width: 80%;
+  }}
