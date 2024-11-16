@@ -8,7 +8,7 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: #d8d8ec;
-  color: #0bf723;
+  color: #ffffff;
   font-weight: 400;
   font-style: normal;
 }
@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #33ec0e; /* Golden color on hover */
+  color: #ee3507; /* Golden color on hover */
 }
 
 /* Section Styles */
@@ -165,7 +165,7 @@ section h2 {
 .emoji-note {
   margin-top: 20px;
   font-size: 1.5em;
-  color: #5b8c5a; /* Subtle green for the final call to action */
+  color: #704205; /* Subtle green for the final call to action */
   font-weight: 600;
 }
 
@@ -185,6 +185,33 @@ section h2 {
 
 .right-side img:hover {
   transform: scale(1.05); /* Hover effect for the photo */
+}
+
+/* Download CV Button Styling */
+.cv-link {
+  padding: 15px 35px;
+  background-color: #409c48;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.cv-link:hover {
+  background-color: #ff5733;
+  transform: scale(1.1);
+}
+
+.cv-link:active {
+  transform: scale(1);
+}
+
+/* Add some shadow to the button for more depth */
+.cv-link {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Services Section */
@@ -313,7 +340,6 @@ footer p {
     width: 100%;
     text-align: center;
   }
-
   .left-side h2 {
     font-size: 2.5em;
   }
@@ -321,4 +347,21 @@ footer p {
   .left-side p {
     font-size: 1.2em;
   }
+  .cv-container {
+    width: 90%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.cv-link {
+    padding: 12px 30px;
+    font-size: 1em;
+}
 }
