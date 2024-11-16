@@ -68,34 +68,67 @@ section h2 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Welcoming Message Styling */
 .welcome-message {
-  background-color: #4caf50;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
   text-align: center;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  width: 100%;
-  font-size: 24px;
+  font-size: 2em;
+  padding: 20px;
+  background-color: #ffebcd;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0px 5px 15px rgba(9, 224, 214, 0.877);
+  color: #360fe0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.welcome-message h1 {
-  margin: 0;
-  font-size: 36px;
+/* Input Container Styling */
+.input-container {
+  margin-top: 30px;
+  text-align: center;
 }
 
-.welcome-message p {
-  font-size: 18px;
+/* Name Input Styling */
+.name-input {
+  padding: 12px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 250px;
+  max-width: 100%;
+  margin-right: 10px;
 }
 
+/* Submit Button Styling */
+.submit-btn {
+  padding: 12px 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background-color: #5b8c5a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ff5733;
+}
+
+/* Emoji Style */
+.emoji {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
 /* About Me Section */
 .about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  background-color: #ffebcd; /* Light peach background */
+  background-color: #9f90ca; /* Light peach background */
   border-radius: 15px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
@@ -114,13 +147,13 @@ section h2 {
 }
 
 .name {
-  color: #00bcd4; /* Cyan color for your name */
+  color: #0509fd; /* Cyan color for your name */
 }
 
 .left-side p {
   font-size: 1.3em;
   line-height: 1.8;
-  color: #555;
+  color: #694523;
   font-weight: 300;
 }
 
