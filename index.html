@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="logo">
-          <img src="images/logo.png" alt="Logo">
+          <img src="logo.png" alt="Logo">
         </div>
         <nav class="nav-menu">
           <ul>
@@ -22,32 +22,43 @@
           </ul>
         </nav>
       </header>   
-      <section class="about-me">
-        <div class="left-side">
-            <h2>COLLINS KIMUTAI</h2>
-            <p>
-                Hi!🙋‍♂️ I'm COLLINS, a passionate Web Developer and Teacher. I specialize in creating responsive, 
-                user-friendly websites that deliver an excellent user experience. 
-                As a teacher, I help students learn the fundamentals of web development and design,
-                 enabling them to build their own websites and applications. 
-                 My goal is to make web development both accessible and exciting for everyone.
-            </p>
-        </div>
-        <div class="right-side">
-            <img src="images/my pic.jpg" alt="My Photo">
-        </div>
-    </section>
+      <!-- Welcoming Message Section -->
+<div class="welcome-message" id="welcomeMessage">
+    <!-- The welcoming message will be inserted here by JavaScript -->
+</div>
+
+<!-- Name Input -->
+<div class="input-container">
+    <input type="text" id="userName" class="name-input" placeholder="Enter your name">
+    <button class="submit-btn" onclick="generateWelcomeMessage()">Submit</button>
+</div>
+     <section class="about-me">
+    <div class="left-side">
+        <h2>Hey there, I'm <span class="name">Collins Kimutai 😎</span>!</h2>
+        <p>
+            Welcome to my little corner of the web! 🙋‍♂️ I'm a passionate <span class="highlight">Web Developer 💻</span> and an excited <span class="highlight">Teacher 👨‍🏫</span>. 
+            I specialize in crafting <span class="highlight">responsive, user-friendly websites 🌐</span> that are as fun to use as they are to create. 
+            As a teacher, I absolutely <span class="highlight">love sharing the joy of coding 🤩</span> and helping students unlock the mysteries of web development & design. 
+            My mission? To make web development <span class="highlight">accessible, fun, and exciting 💯</span> for everyone, regardless of where you start!
+        </p>
+        <p class="emoji-note">Let's make the web a better place, one line of code at a time! 💥</p>
+    </div>
+    <div class="right-side">
+        <img src="my pic.jpg" alt="Collins' Photo">
+    </div>
+</section>
+
      <!-- Services Section -->
      <section id="services" class="services">
       <h2>My Services</h2>
       <p>I offer a variety of services to help you achieve your goals:</p>
       <div class="service-card">
-          <img src="web-dev.jpg" alt="Web Development">
+          <img src="Webpic.jpg" alt="Web Development">
           <h3>Web Development</h3>
           <p>Building responsive, user-friendly websites tailored to your needs.</p>
       </div>
       <div class="service-card">
-          <img src="teaching.jpg" alt="Teaching">
+          <img src="Teacher.jpg" alt="Teaching">
           <h3>Teaching</h3>
           <p>Providing online tutorials and courses for aspiring web developers.</p>
       </div>
@@ -57,9 +68,9 @@
   <section id="gallery" class="gallery">
       <h2>Gallery</h2>
       <div class="gallery-images">
-          <img src="gallery1.jpg" alt="Gallery Image 1">
-          <img src="gallery2.jpg" alt="Gallery Image 2">
-          <img src="gallery3.jpg" alt="Gallery Image 3">
+          <img src="Quote.jpeg" alt="Gallery Image 1">
+          <img src="Become Unstoppable.jpeg" alt="Gallery Image 2">
+          <img src="G3.jpeg" alt="Gallery Image 3">
       </div>
   </section>
 
@@ -80,7 +91,8 @@
           <button type="submit">Send Message</button>
       </form>
   </section>
-
+  <script src="index.js"></script>
+  
   <footer>
     <div class="social-media">
       <a href="https://www.facebook.com/100094272961557/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>

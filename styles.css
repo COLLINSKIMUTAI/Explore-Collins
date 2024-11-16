@@ -6,10 +6,9 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  font-family: "Titan One", sans-serif;
+  font-family: "Arial", sans-serif;
+  background-color: #d8d8ec;
+  color: #0bf723;
   font-weight: 400;
   font-style: normal;
 }
@@ -19,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2a9229;
+  background-color: #4682b4;
   padding: 20px;
   color: rgb(168, 36, 36);
 }
@@ -40,13 +39,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(1, 9, 10);
+  color: rgb(70, 35, 29);
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffcc00; /* Golden color on hover */
+  color: #33ec0e; /* Golden color on hover */
 }
 
 /* Section Styles */
@@ -69,27 +68,72 @@ section h2 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* About Section */
+.welcome-message {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  font-size: 24px;
+}
+
+.welcome-message h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.welcome-message p {
+  font-size: 18px;
+}
+
+/* About Me Section */
 .about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #053257e5;
-  color: #333;
+  padding: 40px 20px;
+  background-color: #ffebcd; /* Light peach background */
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
 .left-side {
-  width: 45%;
+  width: 50%;
+  padding: 30px;
 }
 
 .left-side h2 {
-  font-size: 2.5em;
-  color: #e21833;
+  font-size: 3em;
+  color: #ff5733; /* Bright orange for enthusiasm */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.name {
+  color: #00bcd4; /* Cyan color for your name */
 }
 
 .left-side p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.8;
+  color: #555;
+  font-weight: 300;
+}
+
+.highlight {
+  color: #ff5733; /* Highlighted words in bright orange */
+  font-weight: bold;
+}
+
+.emoji-note {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #5b8c5a; /* Subtle green for the final call to action */
+  font-weight: 600;
 }
 
 .right-side {
@@ -99,15 +143,20 @@ section h2 {
 
 .right-side img {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   border-radius: 20px;
-  border: 5px solid #51d14f;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 5px solid #c69287;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.right-side img:hover {
+  transform: scale(1.05); /* Hover effect for the photo */
 }
 
 /* Services Section */
 .services {
-  background-color: #fff;
+  background-color: #452c2c;
   text-align: center;
 }
 
@@ -122,12 +171,12 @@ section h2 {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgb(69, 228, 41);
   margin-bottom: 15px;
 }
 
 .service-card h3 {
-  color: #5b8c5a;
+  color: #1ad717;
 }
 
 /* Gallery Section */
@@ -145,12 +194,13 @@ section h2 {
   width: 30%;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(118, 22, 22, 0.952);
+  transition: transform 0.3s ease;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #f0f8ff;
+  background-color: #601d7c;
 }
 
 form {
@@ -166,18 +216,19 @@ form label {
   margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #9f08bd;
   border-radius: 5px;
 }
 
 form button {
   padding: 12px 20px;
-  background-color: #5b8c5a;
-  color: white;
+  background-color: #0fd40b;
+  color: rgb(138, 26, 26);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -189,7 +240,7 @@ form button:hover {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #1e0a0a;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -207,8 +258,8 @@ footer p {
 
 .social-icon {
   margin: 0 15px;
-  font-size: 2em;  /* Increase icon size */
-  color: #3006eb;  /* Default color */
+  font-size: 2em; /* Increase icon size */
+  color: #3006eb; /* Default color */
   transition: color 0.3s ease;
 }
 
@@ -216,26 +267,25 @@ footer p {
   color: #ff5733; /* Color change on hover */
 }
 
-/* Responsive Design */
+/* Media Queries for smaller devices */
 @media (max-width: 768px) {
   .about-me {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
   }
 
-  .left-side, .right-side {
-      width: 100%;
-      text-align: center;
+  .left-side,
+  .right-side {
+    width: 100%;
+    text-align: center;
   }
 
   .left-side h2 {
-      font-size: 2em;
+    font-size: 2.5em;
   }
 
   .left-side p {
-      font-size: 1.1em;
+    font-size: 1.2em;
   }
-
-  .service-card {
-      width: 80%;
-  }}
+}
