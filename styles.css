@@ -334,6 +334,7 @@ footer p {
   .right-side {
     width: 100%;
     text-align: center;
+    margin-left: 20px;
   }
 
   .left-side h2 {
